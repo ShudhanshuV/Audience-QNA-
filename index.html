@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link href="/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="left-sidebar">
+        <div id="logo">
+            <img src="/assets/photo-1557682250-33bd709cbe85.jpg" alt="logo">
+        </div>
+
+        <nav class="column-wise navigation">
+            <a href="#" class="nav-link column-wise">
+                <i class="fas fa-calendar-alt"></i>
+                <span class="nav-title">Event</span>
+            </a>
+            <a href="#" class="active nav-link column-wise">
+                <i class="fas fa-users"></i>
+                <span class="nav-title">Teams</span>
+            </a>
+            <a href="#" class="nav-link column-wise">
+                <i class="fas fa-share-alt-square"></i>
+                <span class="nav-title">Analytics</span>
+            </a>
+            <a href="#" class="nav-link column-wise">
+                <i class="fas fa-envelope-open-text"></i>
+                <span class="nav-title">Results</span>
+            </a>
+        </nav>
+    </div>
+
+    <div class="main-container">
+        <div class="header">
+            <div class="heading">
+                <img src="/assets/280438a72cb545d49d5e6c7a2eefed6c (1).png" alt="logo">
+                <h1>Admin Dashboard</h1>
+            </div>
+
+            <div class="preview">
+                <p>Preview on:</p>
+                <span><i class="fas fa-mobile-alt"></i></span>
+                <span><i class="fas fa-tv"></i></span>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="secondary-menu">
+                <div class="menu-heading">
+                    <p>Event Settings</p>
+                </div>
+                <div class="menu-item column-wise">
+                    <a href="#">General</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Features</a>
+                    <a href="#">Customization</a>
+                    <a href="#">Integration</a>
+                    <a href="#">Session Settings <i class="fas fa-lock"></i></a>
+                    <a href="#">My plans</a>
+                </div>
+            </div>
+
+            <div class="left-content">
+                <span class="exit-icon">
+                    <i class="far fa-times-circle"></i>
+                </span>
+                <div class="box">
+                    <div class="dropdown-bar">
+                        <span class="textbutton">
+                            <i class="fas fa-comments"></i>
+                            Audience Q&A
+                        </span>
+                        
+                        <div class="btn-block">
+                            <div class="form-item__control toggle" id="button-toggle">
+                                <div class="toggle__handle"></div>
+                            </div>
+                            <span class="btnicon" id="btnicon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="down-container" id="down-menu">
+                        <div class="wrapper">
+                            <div class="card-body">
+                                <div class="container">
+                                    <div class="grid grid--half">
+
+                                        <div class="form-item">
+                                            <label class="form-item__label">
+                                            Moderation
+                                                <p>
+                                                Easily review all questions before they go live.
+                                                </p>
+                                            </label>
+                                            <div class="form-item__control toggle">
+                                                <div class="toggle__handle"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-item">
+                                            <label class="form-item__label">
+                                                Labels
+                                                <p>
+                                                    Categorize and filter questions.
+                                                </p>
+                                            </label>
+                                            <div class="form-item__control toggle">
+                                                <div class="toggle__handle"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-item">
+                                            <label class="form-item__label">
+                                                Downvotes
+                                                <p>
+                                                    Enable downloading of questions.
+                                                </p>
+                                            </label>
+                                            <div class="form-item__control toggle">
+                                                <div class="toggle__handle"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-item">
+                                            <label class="form-item__label">
+                                                Replies
+                                                <p>
+                                                    Allow participants to reply to or comment on questions.
+                                                </p>
+                                            </label>
+                                            <div class="form-item__control toggle">
+                                            
+                                                <div class="toggle__handle"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-item">
+                                            <label class="form-item__label">
+                                                Anonymous questions
+                                                <p>
+                                                    Let your participants send anonymous questions.
+                                                </p>
+                                            </label>
+                                            <div class="form-item__control toggle">
+                                                <div class="toggle__handle"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-item">
+                                            <label class="form-item__label">
+                                            Maximum question length
+                                                <p>
+                                                Show number of votes instead of percentage
+                                                </p>
+                                                <div class="votes-number">
+                                                    <input type="radio" name="buttonGroup" value="one" id="one" class="btn"><label for="one">160</label>
+                                                    <input type="radio" name="buttonGroup" value="two" id="two" class="btn"><label for="two">240</label>
+                                                    <input type="radio" name="buttonGroup" value="three" id="three" class="btn"><label for="three">300</label>
+                                                </div>
+                                            </label>
+                                            <div class="form-item__control toggle">
+                                                <div class="toggle__handle"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-item">
+                                            <label class="form-item__label">
+                                                Close questions
+                                                <p>
+                                                    Prevent the participants from sending new questions to your event.                                            
+                                                </p>
+                                            </label>
+                                            <div class="form-item__control toggle">
+                                                <div class="toggle__handle"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="buttons column-wise">
+                            <button class="button">Save</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="right-sidebar">
+        <div id="profile">
+            <img src="/assets/profile.jpeg" alt="Profile-Pic">
+            <span class="dot" id="dot-1"></span>
+        </div>
+
+        <nav class="column-wise">
+            <i class="fas fa-bell"></i>
+            <span class="dot" id="dot-2"></span>
+            <i class="fas fa-comments"></i>
+            <span class="dot" id="dot-3"></span>
+            <i class="fas fa-cog"></i>
+        </nav>
+    </div>
+    <script src="/toggle.js"></script>
+</body>
+</html>
